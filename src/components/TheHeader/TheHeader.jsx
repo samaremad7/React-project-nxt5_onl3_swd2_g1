@@ -1,13 +1,15 @@
-import './THeHeader.css'
+import './TheHeader.css'
 
-function TheHeader(){
-    return(
+function TheHeader({ headerlink }) {
+    return (
         <header>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact Us</li>
+                    {headerlink.map(({ title, path }) =>
+                        <li key={title} >
+                            <a href={path}>{title}</a>
+                        </li>
+                    )}
                 </ul>
             </nav>
         </header>
