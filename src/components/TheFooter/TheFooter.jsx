@@ -1,7 +1,12 @@
 import './TheFooter.css'
+import { Container } from 'react-bootstrap';
 function TheFooter(){
     return(
-     <footer>react project copyrights</footer>
+     <footer>
+       <Container>
+        <p className='text-center'>React Project Copyright</p>
+       </Container>
+     </footer>
     )
 }
 

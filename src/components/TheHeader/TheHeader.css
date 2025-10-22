@@ -1,0 +1,6 @@
+.nav-item a {
+    color: hsl(var(--blue));
+}
+.nav-item a.active {
+    color: green;
+}
